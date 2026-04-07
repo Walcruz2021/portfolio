@@ -1,0 +1,52 @@
+
+/*@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");*/
+
+.rouge-script-regular {
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');*/
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');*/
+.charm-regular {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');*/
+.beau-rivage-regular {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Unna:ital@0;1&display=swap');*/
+.unna-regular {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unna-regular-italic {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');*/
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}

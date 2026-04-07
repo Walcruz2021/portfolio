@@ -1,0 +1,26 @@
+.container-carrusel{
+    padding: 10px 120px 20px;
+    background-color: rgb(3, 3, 3);
+}
+
+
+.carrusel-img {
+  width: 70%;
+  max-width: 90vw;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container-carrusel {
+    padding: 10px 0 20px; /* Reduce padding lateral */
+  }
+  .carrusel-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain; /* Evita que se corte la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

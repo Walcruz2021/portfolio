@@ -1,0 +1,12 @@
+.container-card-profile{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container-card-profile{
+    padding: 0.5rem;
+    }
+  }

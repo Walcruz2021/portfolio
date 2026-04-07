@@ -1,0 +1,41 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.marquee {
+  white-space: nowrap;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.left-to-right {
+  animation: moveLeftToRight 18s linear infinite;
+}
+
+.right-to-left {
+  animation: moveRightToLeft 18s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
