@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer2 = () => {
   const openCV = () => {
-    window.open("/FullStackDeveloperWalterCruz.pdf", "_blank");
+    window.open("/CVUpdated030326.pdf", "_blank");
   };
 
   return (
@@ -15,12 +15,8 @@ const Footer2 = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <p className="mb-7 text-2xl text-body-color dark:text-dark-6 instrument-serif-regular text-justify">
-                  Desarrollador Full Stack con experiencia en proyectos
-                  personales y por servicios. Trabajo con Node.js, MongoDB,
-                  PostgreSQL y SQL en backend, y React en frontend, creando
-                  plataformas que puedo mostrar en mi portfolio. Me adapto
-                  rápido y aporto soluciones sólidas.
+                <p className="mb-7 text-3xl text-body-color dark:text-dark-6 instrument-serif-regular text-justify">
+                  Desarrollador Full Stack con experiencia en el desarrollo de proyectos propios y soluciones para clientes. Especializado en backend con Node.js, MongoDB, PostgreSQL y SQL, y en frontend con React. Me enfoco en crear aplicaciones funcionales, escalables y orientadas a resolver necesidades reales, todas respaldadas por proyectos demostrables en mi portfolio. Me adapto rápidamente a nuevos entornos y tecnologías, aportando soluciones eficientes y de calidad.
                 </p>
                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                   <span className="mr-3 text-primary">
@@ -59,7 +55,7 @@ const Footer2 = () => {
             <div className="containerFooterSM">
               <h3 className="instrument-serif-regular">MAS SOBRE MI</h3>
               <button className="buttonCV" onClick={openCV}>
-                Curriculum Vitae
+               <p className="text-2xl instrument-serif-regular">Curriculum Vitae</p> 
               </button>
             </div>
             {/* <LinkGroup header="Más sobre Mi">

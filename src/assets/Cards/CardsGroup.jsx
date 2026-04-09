@@ -40,6 +40,7 @@ export const CardsGroup = () => {
           <CCardFooter>
             <small
               className="text-body-secondary"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open(
                   "https://frontend-app-peluqueria.vercel.app/",
@@ -47,7 +48,7 @@ export const CardsGroup = () => {
                 )
               }
             >
-              Ver Sitio
+              VER SITIO
             </small>
           </CCardFooter>
         </CCard>
@@ -70,6 +71,7 @@ export const CardsGroup = () => {
           <CCardFooter>
             <small
               className="text-body-secondary"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open(
                   "https://github.com/Walcruz2021/GestionTurnosReactNative",
@@ -77,7 +79,7 @@ export const CardsGroup = () => {
                 )
               }
             >
-              Ver Repositorio
+              VER REPOSITORIO
             </small>
           </CCardFooter>
         </CCard>
@@ -100,11 +102,12 @@ export const CardsGroup = () => {
           <CCardFooter>
             <small
               className="text-body-secondary"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open("https://www.pymesya.com.ar", "_blank")
               }
             >
-              Ver Sitio
+              VER SITIO
             </small>
           </CCardFooter>
         </CCard>
@@ -140,14 +143,15 @@ export const CardsGroup = () => {
           <CCardFooter>
             <small
               className="text-body-secondary"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open(
-                  "  https://github.com/Walcruz2021/AdonisJSWithUcropit/tree/master",
+                  "  https://github.com/Ucropit/ucropit-command/tree/master",
                   "_blank"
                 )
               }
             >
-              Ver Repositorio
+              VER REPOSITORIO
             </small>
           </CCardFooter>
         </CCard>
@@ -188,11 +192,12 @@ export const CardsGroup = () => {
           <CCardFooter>
             <small
               className="text-body-secondary"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open("https://ucrop.it/es/inicio/", "_blank")
               }
             >
-              Ver Sitio
+              VER SITIO
             </small>
           </CCardFooter>
         </CCard>

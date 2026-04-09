@@ -79,7 +79,7 @@ export default function CardProfile() {
               </div>
             </Sheet>
             <Box sx={{ display: "flex", gap: 1.5, "& > button": { flex: 1 ,fontSize: "1.5rem"} }}>
-              <Button variant="outlined" color="neutral" onClick={() => window.open('https://www.linkedin.com/in/walcruz1988//', '_blank')}>
+              <Button variant="outlined" color="neutral" onClick={() => window.open('https://www.linkedin.com/in/walcruz1988/', '_blank')}>
                 Linkedin
               </Button>
               <Button variant="solid" color="primary" onClick={() => window.open('https://github.com/Walcruz2021', '_blank')}>
