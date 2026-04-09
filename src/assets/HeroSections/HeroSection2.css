@@ -87,7 +87,6 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  transition: 0.4s;
 }
 
 .hero-image-container img {
@@ -100,11 +99,26 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent 80%,
+    rgba(2, 6, 23, 0.9)
+  );
 }
 
 .hero-image-container:hover {
   transform: scale(1.03);
+}
+
+.hero-image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(2, 6, 23, 0.7),
+    transparent 60%
+  );
 }
 
 /* RESPONSIVE */
