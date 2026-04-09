@@ -12,8 +12,8 @@ import {
 } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "./CardsGroup.css";
-import gestionTurnos from "../../img/gestionTurnos.png";
-import pymesYa from "../../img/pymesYa.png";
+import gestionTurnos from "../../img/gestionTurnos.png";  
+import pymesYa from "../../img/pymesya.png";
 import AppMobile from "../../img/AppMobile.png";
 import adonis from "../../img/adonis2.png";
 import ucropit from "../../img/ucropit3.jpg";
