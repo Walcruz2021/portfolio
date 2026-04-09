@@ -5,7 +5,7 @@
 import typescript from "../../img/typescript.png";
 import typescript2 from "../../img/typescript2.png";
 import jenkins from "../../img/jenkins.png";
-import graphql from "../../img/graphql.png";
+import graphql from "../../img/graphQL.png";
 import domManip from "../../img/domManip.png";
 import javascript from "../../img/javascript.png";
 import { Carousel } from "react-bootstrap";
