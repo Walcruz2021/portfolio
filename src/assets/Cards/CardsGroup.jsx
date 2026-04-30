@@ -17,9 +17,12 @@ import pymesYa from "../../img/pymesya.png";
 import AppMobile from "../../img/AppMobile.png";
 import adonis from "../../img/adonis2.png";
 import ucropit from "../../img/ucropit3.jpg";
-export const CardsGroup = () => {
+import { useEffect, useRef } from "react";
+
+export const CardsGroup = ({proyectosRef}) => {
+
   return (
-    <div>
+    <div ref={proyectosRef}  className="scroll-mt-20">
       <CCardGroup className="card-group-container">
         <CCard>
           <CCardImage orientation="top" src={gestionTurnos} />

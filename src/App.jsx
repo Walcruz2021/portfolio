@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import SplitText from "./SplitText.jsx";
 import TitlesEffect from "./assets/Titles/TitlesEffect.jsx";
-import HeroSection2 from "../src/assets/HeroSections/HeroSection2.jsx";
+import HeroSection4 from "../src/assets/HeroSections/HeroSection4.jsx";
 import TitleWithSaveEffect from "../src/assets/Titles/TitlesWithSaveEffect.jsx";
 import CardProfile from "../src/assets/Cards/CardProfile.jsx";
 import TitlesFontsGoogle from "../src/assets/Titles/TitlesFontsGoogle.jsx";
@@ -19,9 +19,12 @@ import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
 import Footer2 from "./assets/Footer/Footer2.jsx";
 
+
+
+
 function App() {
+  const proyectosRef = useRef(null);
   const [count, setCount] = useState(0);
-  const containerRef = useRef(null);
   useEffect(() => {
     document.fonts.ready.then(() => {
       if (!containerRef.current) return;
@@ -55,7 +58,13 @@ function App() {
 
         {/* <TitlesEffect/> */}
         {/*<TitlesReactAwesome />*/}
-        <HeroSection2 />
+
+
+
+
+        <div className="min-h-screen bg-[#050810]">
+          <HeroSection4 proyectosRef={proyectosRef} />
+        </div>
 
         <div style={{ backgroundColor: "white" }}>
           {/* <TitleWithSaveEffect /> */}
@@ -64,7 +73,7 @@ function App() {
 
           <div className="container2">
             <h1 className="instrument-serif-regular titleh1">PROYECTOS</h1>
-            <CardsGroup />
+            <CardsGroup  proyectosRef={proyectosRef}/>
           </div>
 
           <div className="container2">
