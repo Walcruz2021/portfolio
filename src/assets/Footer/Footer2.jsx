@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer2 = () => {
   const openCV = () => {
-    window.open("/CVUpdated030326.pdf", "_blank");
+    window.open("/CVWalterCruz300426.pdf", "_blank");
   };
 
   return (
