@@ -1,157 +1,133 @@
-//EL CSS QUE SE ESTA APLICANDO ES TAILWIND CSS
+import { motion } from "framer-motion";
+// import { Phone, FileText, Github, Linkedin, Mail } from "lucide-react";
+import { FileText, Phone } from "lucide-react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-import React from "react";
-import "./Footer.css";
-
-const Footer2 = () => {
+export default function Footer2({ onOpenCV }) {
   const openCV = () => {
-    window.open("/CVWalterCruz300426.pdf", "_blank");
+    if (onOpenCV) {
+      onOpenCV();
+    } else {
+      window.open("/CVWalterCruz300426.pdf", "_blank");
+    }
   };
 
   return (
-    <>
-      <footer className="relative z-10 bg-white pb-5 pt-5 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <p className="mb-7 text-3xl text-body-color dark:text-dark-6 instrument-serif-regular text-justify">
-                  Desarrollador Full Stack con experiencia en el desarrollo de proyectos propios y soluciones para clientes. Especializado en backend con Node.js, MongoDB, PostgreSQL y SQL, y en frontend con React. Me enfoco en crear aplicaciones funcionales, escalables y orientadas a resolver necesidades reales, todas respaldadas por proyectos demostrables en mi portfolio. Me adapto rápidamente a nuevos entornos y tecnologías, aportando soluciones eficientes y de calidad.
-                </p>
-                <p className="flex items-center text-sm font-medium text-dark dark:text-white">
-                  <span className="mr-3 text-primary">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_941_15626)">
-                        <path
-                          d="M15.1875 19.4688C14.3438 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84377 16.375 5.75002 14.2813C3.65627 12.1875 2.03127 9.84377 1.18752 7.68752C0.250019 5.37502 0.343769 3.46877 1.43752 2.40627C1.46877 2.37502 1.53127 2.34377 1.56252 2.31252L4.18752 0.750025C4.84377 0.375025 5.68752 0.562525 6.12502 1.18752L7.96877 3.93753C8.40627 4.59378 8.21877 5.46877 7.59377 5.90627L6.46877 6.68752C7.28127 8.00002 9.59377 11.2188 13.2813 13.5313L13.9688 12.5313C14.5 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.625 18.5 17.5938 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37502 3.46878C1.78127 4.12503 1.81252 5.46877 2.50002 7.18752C3.28127 9.15627 4.78127 11.3125 6.75002 13.2813C8.68752 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1875 15.0938 12.5625 14.6875C8.62502 12.25 6.18752 8.84377 5.31252 7.46877C4.90627 6.81252 5.06252 5.96878 5.68752 5.53128L6.81252 4.75002V4.71878L4.96877 1.96877C4.96877 1.93752 4.93752 1.93752 4.90627 1.96877L2.37502 3.46878Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M18.3125 8.90633C17.9375 8.90633 17.6563 8.62508 17.625 8.25008C17.375 5.09383 14.7813 2.56258 11.5938 2.34383C11.2188 2.31258 10.9063 2.00008 10.9375 1.59383C10.9688 1.21883 11.2813 0.906333 11.6875 0.937583C15.5625 1.18758 18.7188 4.25008 19.0313 8.12508C19.0625 8.50008 18.7813 8.84383 18.375 8.87508C18.375 8.90633 18.3438 8.90633 18.3125 8.90633Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M15.2187 9.18755C14.875 9.18755 14.5625 8.93755 14.5312 8.56255C14.3437 6.87505 13.0312 5.56255 11.3437 5.3438C10.9687 5.31255 10.6875 4.93755 10.7187 4.56255C10.75 4.18755 11.125 3.9063 11.5 3.93755C13.8437 4.2188 15.6562 6.0313 15.9375 8.37505C15.9687 8.75005 15.7187 9.0938 15.3125 9.1563C15.25 9.18755 15.2187 9.18755 15.2187 9.18755Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_941_15626">
-                          <rect width="20" height="20" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span className="text-2xl">(387) 6153799</span>
-                </p>
-              </div>
+    <footer className="relative bg-black overflow-hidden border-t border-white/10">
+
+      {/* Background decorative blobs */}
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none" />
+      <div className="absolute -top-20 right-0 w-72 h-72 rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-6 pt-16 pb-8">
+        {/* Top section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 border-b border-white/10 pb-12">
+
+          {/* Bio */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="lg:col-span-2"
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-1 h-6 bg-blue-500 rounded-full" />
+              <span className="text-[10px] tracking-[0.35em] uppercase text-blue-400 font-semibold">
+                Walter Cruz
+              </span>
             </div>
-            <div className="containerFooterSM">
-              <h3 className="instrument-serif-regular">MAS SOBRE MI</h3>
-              <button className="buttonCV" onClick={openCV}>
-               <p className="text-2xl instrument-serif-regular">Curriculum Vitae</p> 
-              </button>
+            <h2 className="text-7xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-5">
+              Desarrollador<br />
+              <span className="text-blue-400">Full Stack</span>
+            </h2>
+            <p className="text-gray-400 text-xl leading-relaxed max-w-xl font-light text-justify">
+              Con experiencia en el desarrollo de proyectos propios y soluciones para clientes.
+              Especializado en backend con Node.js, MongoDB, PostgreSQL y SQL, y en frontend con React.
+              Me enfoco en crear aplicaciones funcionales, escalables y orientadas a resolver
+              necesidades reales.
+            </p>
+          </motion.div>
+
+          {/* Contact + CV */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="flex flex-col gap-5"
+          >
+            <div>
+              <p className="text-[12px] tracking-[0.3em] uppercase text-gray-500 font-semibold mb-4">
+                Contacto
+              </p>
+              <a
+                href="tel:3876153799"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 no-underline transition-colors duration-200 group mb-3"
+              >
+                <span className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-blue-500/40 group-hover:bg-blue-500/10 transition-all duration-200">
+                  <Phone className="w-5 h-5" strokeWidth={1.6} />
+                </span>
+                <span className="text-xl">(387) 6153799</span>
+              </a>
             </div>
-            {/* <LinkGroup header="Más sobre Mi">
-                <button className="buttonCV" onClick={openCV}>
-                  Curriculum Vitae
-                </button>
-              </LinkGroup> */}
+
+            {/* CV Button */}
+            <div>
+              <p className="text-[12px] tracking-[0.3em] uppercase text-gray-500 font-semibold mb-4">
+                Más sobre mí
+              </p>
+              <motion.button
+                onClick={openCV}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                className="flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white text-xl font-semibold tracking-wide px-5 py-3 transition-colors duration-200 w-full justify-center rounded-sm"
+              >
+                <FileText className="w-6 h-6" strokeWidth={1.8} />
+                Curriculum Vitae
+              </motion.button>
+            </div>
+
+            {/* Social links */}
+            <div className="flex gap-3 pt-1">
+              {[
+                { icon: FaGithub, href: "https://github.com/Walcruz2021", label: "FaGithub" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/walcruz1988/", label: "FaLinkedin" },
+                { icon: FaEnvelope, href: "walcruz1988.21@gmail.com", label: "FaEnvelope" },
+              ].map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-20 h-20 rounded-lg bg-white/8 border border-gray flex items-center justify-center text-gray-500 hover:text-blue-400 hover:border-blue-500/40 hover:bg-blue-500/10 transition-all duration-200"
+                >
+                  <Icon className="w-10 h-10" strokeWidth={1.6} />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Bottom bar */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3"
+        >
+         
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+            <span className="text-gray-600 text-xl tracking-widest uppercase">
+              Disponible para trabajar
+            </span>
           </div>
-        </div>
-        <div>
-          <span className="absolute bottom-0 left-0 z-[-1]">
-            <svg
-              width={217}
-              height={229}
-              viewBox="0 0 217 229"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                fill="url(#paint0_linear_1179_5)"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_1179_5"
-                  x1="76.5"
-                  y1={281}
-                  x2="76.5"
-                  y2="1.22829e-05"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#3056D3" stopOpacity="0.08" />
-                  <stop offset={1} stopColor="#C4C4C4" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-          <span className="absolute right-10 top-10 z-[-1]">
-            <svg
-              width={75}
-              height={75}
-              viewBox="0 0 75 75"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M37.5 -1.63918e-06C58.2107 -2.54447e-06 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 -7.33885e-07 58.2107 -1.63918e-06 37.5C-2.54447e-06 16.7893 16.7893 -7.33885e-07 37.5 -1.63918e-06Z"
-                fill="url(#paint0_linear_1179_4)"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_1179_4"
-                  x1="-1.63917e-06"
-                  y1="37.5"
-                  x2={75}
-                  y2="37.5"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#13C296" stopOpacity="0.31" />
-                  <stop offset={1} stopColor="#C4C4C4" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </div>
-      </footer>
-    </>
-  );
-};
+        </motion.div>
 
-export default Footer2;
-
-const LinkGroup = ({ children, header }) => {
-  return (
-    <>
-      <div className="w-full px-2 sm:w-1/2 lg:w-2/12">
-        <div className="mb-10 w-full">
-          <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-            {header}
-          </h4>
-          <ul className="space-y-3">{children}</ul>
-        </div>
       </div>
-    </>
+    </footer>
   );
-};
-
-const NavLink = ({ link, label }) => {
-  return (
-    <li>
-      <a
-        href={link}
-        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-      >
-        {label}
-      </a>
-    </li>
-  );
-};
+}
