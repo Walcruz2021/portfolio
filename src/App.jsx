@@ -13,7 +13,7 @@ import Carrusel1 from "../src/assets/Carrusel/Carrusel1.jsx";
 import Carrusel2 from "../src/assets/Carrusel/Carrusel2.jsx";
 import TitlesTrain from "../src/assets/Titles/TitlesTrain.jsx";
 import TitlesReactAwesome from "../src/assets/Titles/TitlesReactAwesome.jsx";
-import HeroSection3 from "./assets/HeroSections/HeroSection3.jsx";
+import HeroSection5 from "./assets/HeroSections/HeroSection5.jsx";
 import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
@@ -73,12 +73,11 @@ function App() {
 
           <div className="container2">
             <h1 className="instrument-serif-regular titleh1">PROYECTOS</h1>
-            <CardsGroup  proyectosRef={proyectosRef}/>
+            <CardsGroup proyectosRef={proyectosRef} />
           </div>
 
-          <div className="container2">
-            <h1 className="titleh1 instrument-serif-regular">TECNOLOGIAS</h1>
-            <HeroSection3 />
+          <div className="min-h-screen bg-[#050810]">
+            <HeroSection5 />
           </div>
 
           <div className="container2">

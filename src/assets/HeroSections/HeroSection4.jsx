@@ -69,7 +69,7 @@ export default function HeroSection4({ proyectosRef }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT — Text */}
-          <div>
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: -16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function HeroSection4({ proyectosRef }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.7 }}
-              className="flex flex-wrap gap-2 mb-10"
+              className="flex flex-wrap justify-center lg:justify-start gap-2 mb-10"
             >
               {SKILLS.map((skill, i) => (
                 <motion.span
@@ -175,9 +175,9 @@ export default function HeroSection4({ proyectosRef }) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="flex justify-center lg:justify-end lg:pr-10"
+            className="flex flex-col items-center lg:items-end lg:pr-10"
           >
-            <div className="relative">
+            <div className="relative flex flex-col items-center">
               {/* Animated border ring */}
               <motion.div
                 animate={{ rotate: 360 }}
@@ -208,7 +208,9 @@ export default function HeroSection4({ proyectosRef }) {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2, duration: 0.6 }}
-                className="absolute -right-4 top-8 bg-gray-900 border border-gray-700 px-4 py-2 shadow-xl"
+                className="relative mt-4
+        sm:absolute sm:-right-4 sm:top-8
+        bg-gray-900 border border-gray-700 px-4 py-2 shadow-xl"
               >
                 <p className="text-blue-400 text-base font-bold tracking-widest uppercase">Full Stack</p>
                 <p className="text-gray-500 text-[12px] tracking-widest">Developer</p>
@@ -219,7 +221,9 @@ export default function HeroSection4({ proyectosRef }) {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.4, duration: 0.6 }}
-                className="absolute -left-4 bottom-10 bg-gray-900 border border-gray-700 px-4 py-2 shadow-xl"
+                className="relative mt-2
+        sm:absolute sm:-left-4 sm:bottom-10
+        bg-gray-900 border border-gray-700 px-4 py-2 shadow-xl"
               >
                 <p className="text-white text-base font-bold">Node.js · React</p>
                 <p className="text-gray-500 text-[12px] tracking-widest uppercase">Stack principal</p>

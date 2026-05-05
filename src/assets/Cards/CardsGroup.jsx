@@ -46,7 +46,7 @@ export const CardsGroup = ({proyectosRef}) => {
               style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open(
-                  "https://frontend-app-peluqueria.vercel.app/",
+                  "https://www.pymesya.com.ar/tecnologias/sistemaGestionTurnos",
                   "_blank"
                 )
               }
@@ -197,7 +197,7 @@ export const CardsGroup = ({proyectosRef}) => {
               className="text-body-secondary"
               style={{ cursor: "pointer" }}
               onClick={() =>
-                window.open("https://ucrop.it/es/inicio/", "_blank")
+                window.open("https://ucrop.it", "_blank")
               }
             >
               VER SITIO
