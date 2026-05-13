@@ -85,7 +85,7 @@ export default function LandingMainProject() {
                 </div>
 
                 {/* OUTER CARD */}
-                <div className="rounded-[32px] border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-2xl p-8 md:p-14 shadow-[0_0_120px_rgba(59,130,246,0.10),inset_0_1px_0_rgba(255,255,255,0.07)]">
+                <div className="overflow-hidden bg-gradient-to-b from-white/[0.04] to-white/[0.01] backdrop-blur-2xl pl-1 pr-1 pt-4 sm:p-8 md:p-14 shadow-[0_0_120px_rgba(59,130,246,0.10),inset_0_1px_0_rgba(255,255,255,0.07)]">
 
                     <div className="grid lg:grid-cols-2 gap-8 items-start">
 
@@ -108,7 +108,7 @@ export default function LandingMainProject() {
                                 initial={{ opacity: 0, y: 24 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.18, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                                className="text-5xl md:text-[7rem] font-black leading-[0.92] tracking-tight mb-7 py-3"
+                                className="text-4xl sm:text-5xl md:text-[7rem] font-black leading-[0.92] tracking-tight mb-7 py-3"
                             >
                                 <span className="text-white">Sistema de</span>
                                 <br />
@@ -211,7 +211,7 @@ export default function LandingMainProject() {
 
                             {/* DESCRIPTION */}
 
-                            <div className="grid grid-cols-[300px_1fr] gap-20 items-center mt-0">
+                            <div className="grid grid-cols-1 lg:grid-cols-[180px_1fr] gap-8 lg:gap-20 items-center mt-0">
 
                                 <motion.div
                                     initial={{ opacity: 0, y: 12 }}
