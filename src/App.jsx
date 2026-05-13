@@ -18,7 +18,7 @@ import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
 import Footer2 from "./assets/Footer/Footer2.jsx";
-
+import LandingMainProject from "./Landing/landingMainProject.jsx";
 
 
 
@@ -71,14 +71,21 @@ function App() {
           <div></div>
           <CardProfile />
 
+          <div className="min-h-screen bg-[#050810] mt-10">
+            <LandingMainProject />
+          </div>
+
           <div className="container2">
-            <h1 className="instrument-serif-regular titleh1">PROYECTOS</h1>
+            <h1 className="instrument-serif-regular titleh1">OTROS PROYECTOS</h1>
             <CardsGroup proyectosRef={proyectosRef} />
           </div>
 
-          <div className="min-h-screen bg-[#050810]">
+
+
+          <div className="min-h-screen bg-[#050810] mt-10">
             <HeroSection5 />
           </div>
+
 
           <div className="container2">
             <h1 className="instrument-serif-regular titleh1">CERTIFICADOS</h1>
