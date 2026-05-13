@@ -18,7 +18,7 @@ import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
 import Footer2 from "./assets/Footer/Footer2.jsx";
-import LandingMainProject from "./Landing/landingMainProject.jsx";
+import LandingMainProject from "./Landing/LandingMainProject.jsx";
 
 
 
