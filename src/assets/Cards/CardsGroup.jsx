@@ -211,7 +211,7 @@ export const CardsGroup = ({proyectosRef}) => {
           <CCardBody>
             <CCardTitle className="charm-regular text-center">
               <h2 className="titleh3 ">
-                Eccomerce MultiEmpresa
+                Ecommerce MultiEmpresa
               </h2>
             </CCardTitle>
             <CCardText className="charm-regular">
