@@ -17,6 +17,7 @@ import pymesYa from "../../img/pymesya.png";
 import AppMobile from "../../img/AppMobile.png";
 import adonis from "../../img/adonis2.png";
 import ucropit from "../../img/ucropit3.jpg";
+import ecommerceSistemaPY from "../../img/ecommerceSistemaPY.png"
 import { useEffect, useRef } from "react";
 
 export const CardsGroup = ({proyectosRef}) => {
@@ -198,6 +199,43 @@ export const CardsGroup = ({proyectosRef}) => {
               style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open("https://ucrop.it", "_blank")
+              }
+            >
+              VER SITIO
+            </small>
+          </CCardFooter>
+        </CCard>
+
+        <CCard>
+          <CCardImage orientation="top" src={ecommerceSistemaPY} />
+          <CCardBody>
+            <CCardTitle className="charm-regular text-center">
+              <h2 className="titleh3 ">
+                Eccomerce MultiEmpresa
+              </h2>
+            </CCardTitle>
+            <CCardText className="charm-regular">
+              <ul>
+                <li className="justificado-centrado">
+                  * Desarrollé un módulo de ecommerce integrado a la plataforma de gestión empresarial, permitiendo que cualquier negocio genere automáticamente su propia tienda virtual utilizando el catálogo de productos ya existente en el sistema.
+                </li>
+                <li className="justificado-centrado">
+                  * La solución elimina la doble carga de información entre sistemas, centraliza la administración de inventario y facilita la publicación inmediata de productos en internet. Además, incorpora herramientas de búsqueda y filtrado por categorías, marcas y nombres de productos para mejorar la experiencia de compra de los clientes.
+                </li>
+
+                <li className="justificado-centrado">
+                  * Este enfoque permite reducir costos operativos, acelerar la transformación digital de pequeñas y medianas empresas y simplificar la gestión de ventas online desde una única plataforma.
+                </li>
+
+              </ul>
+            </CCardText>
+          </CCardBody>
+          <CCardFooter>
+            <small
+              className="text-body-secondary"
+              style={{ cursor: "pointer" }}
+              onClick={() =>
+                window.open("https://www.pymesya.com.ar/tecnologias/sistemaGestionTurnos", "_blank")
               }
             >
               VER SITIO

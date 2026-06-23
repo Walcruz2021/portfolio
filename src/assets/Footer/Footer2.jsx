@@ -3,14 +3,11 @@ import { motion } from "framer-motion";
 import { FileText, Phone } from "lucide-react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-export default function Footer2({ onOpenCV }) {
-  const openCV = () => {
-    if (onOpenCV) {
-      onOpenCV();
-    } else {
-      window.open("/CVWalterCruz300426.pdf", "_blank");
-    }
-  };
+export default function Footer2() {
+
+const openCV = () => {
+  window.open("/CVWalterCruz300426.pdf", "_blank");
+};
 
   return (
     <footer className="relative bg-black overflow-hidden border-t border-white/10">
@@ -93,7 +90,7 @@ export default function Footer2({ onOpenCV }) {
               {[
                 { icon: FaGithub, href: "https://github.com/Walcruz2021", label: "FaGithub" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/walcruz1988/", label: "FaLinkedin" },
-                { icon: FaEnvelope, href: "walcruz1988.21@gmail.com", label: "FaEnvelope" },
+                { icon: FaEnvelope, href: "mailto:walcruz1988.21@gmail.com", label: "FaEnvelope" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
