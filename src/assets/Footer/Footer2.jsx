@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Footer2() {
 
 const openCV = () => {
-  window.open("/CVWalterCruz300426.pdf", "_blank");
+  window.open("/FullStackDeveloperWalterCruz.pdf", "_blank");
 };
 
   return (

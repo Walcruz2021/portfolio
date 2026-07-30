@@ -12,18 +12,21 @@ import {
 } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import "./CardsGroup.css";
-import gestionTurnos from "../../img/gestionTurnos.png";  
+import gestionTurnos from "../../img/gestionTurnos.png";
 import pymesYa from "../../img/pymesya.png";
 import AppMobile from "../../img/AppMobile.png";
 import adonis from "../../img/adonis2.png";
 import ucropit from "../../img/ucropit3.jpg";
 import ecommerceSistemaPY from "../../img/ecommerceSistemaPY.png"
+import mockupIAAsistente from "../../img/mockupIAAsistente.png"
+
+
 import { useEffect, useRef } from "react";
 
-export const CardsGroup = ({proyectosRef}) => {
+export const CardsGroup = ({ proyectosRef }) => {
 
   return (
-    <div ref={proyectosRef}  className="scroll-mt-20">
+    <div ref={proyectosRef} className="scroll-mt-20">
       <CCardGroup className="card-group-container">
         <CCard>
           <CCardImage orientation="top" src={gestionTurnos} />
@@ -207,11 +210,64 @@ export const CardsGroup = ({proyectosRef}) => {
         </CCard>
 
         <CCard>
+          <CCardImage orientation="top" src={mockupIAAsistente} />
+          <CCardBody>
+            <CCardTitle className="charm-regular text-center">
+              <h2 className="titleh3 ">
+                Asistente Inteligente Integrado con IA
+              </h2>
+            </CCardTitle>
+            <CCardText className="charm-regular">
+              <p className="justificado-centrado">
+                Desarrollo de un asistente inteligente integrado al sistema de gestión, diseñado para responder consultas sobre la empresa en tiempo real utilizando lenguaje natural.
+                Con solo hacer una pregunta, el usuario puede obtener información como:
+              </p>
+              <ul>
+                <li className="justificado-centrado">
+                  * Productos más vendidos y menos vendidos.
+                </li>
+                <li className="justificado-centrado">
+                  * Productos con mayor y menor rentabilidad.
+                </li>
+
+                <li className="justificado-centrado">
+                  * Indicadores clave del negocio (ventas, ganancias, ticket promedio, unidades vendidas, entre otros)
+                </li>
+
+                <li className="justificado-centrado">
+                  * Recomendaciones y sugerencias para aumentar las ventas y mejorar la rentabilidad, basadas en la información de la empresa
+                </li>
+                <li className="justificado-centrado">
+                  * Análisis del inventario y comportamiento de los producto
+                </li>
+
+                <li className="justificado-centrado">
+                  * Respuestas en segundos, sin necesidad de generar reportes manualmente.
+                </li>
+
+              </ul>
+            </CCardText>
+          </CCardBody>
+          <CCardFooter>
+            <small
+              className="text-body-secondary"
+              style={{ cursor: "pointer" }}
+              onClick={() =>
+                window.open("https://www.linkedin.com/posts/inteligenciaartificial-ai-chatbot-ugcPost-7488610724093812738-ODcz/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADe5kvYBaYMeTT7z_8ZgGohIEE0IJA86JOQ", "_blank")
+              }
+            >
+              VER SITIO
+            </small>
+          </CCardFooter>
+        </CCard>
+
+        <CCard>
           <CCardImage orientation="top" src={ecommerceSistemaPY} />
           <CCardBody>
             <CCardTitle className="charm-regular text-center">
               <h2 className="titleh3 ">
                 Ecommerce MultiEmpresa
+
               </h2>
             </CCardTitle>
             <CCardText className="charm-regular">
@@ -242,6 +298,7 @@ export const CardsGroup = ({proyectosRef}) => {
             </small>
           </CCardFooter>
         </CCard>
+
       </CCardGroup>
     </div>
   );
